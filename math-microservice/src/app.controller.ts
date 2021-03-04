@@ -8,7 +8,7 @@ export class AppController {
 
   @MessagePattern('sum')
   async sumNumbers(data: Array<number>) {
-    
+    return 911
   }
   
 }
