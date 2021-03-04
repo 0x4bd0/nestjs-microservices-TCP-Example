@@ -10,6 +10,10 @@ private logger = new Logger('AppController')
 
   @Post('Sum')
   async sumNumbers(@Body('data') data: Array<number>) {
+
+    this.logger.log('Http request to Sum' + data.toString())
+    
+    return this.mathService.SumNumbers(data)
     
   }
 
