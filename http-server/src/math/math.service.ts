@@ -19,7 +19,7 @@ export class MathService {
     }
 
     public SumNumbers(data: Array<number>) {
-        return this.client.send<number>('add', data)
+        return this.client.send<number>('sum', data)
     }
 
 
